@@ -25,3 +25,5 @@ for(let i = 0; i < starsFraction; i++) {
   star.style.backgroundColor = colour;
   document.body.appendChild(star);
 }
+
+document.getElementById("title").focus();

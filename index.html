@@ -9,9 +9,30 @@
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
 
-<body>
-    <h1 class="homePageTitleFont">Welcome to the UI5 Academy</h1>
-    <script src="reusable/starBackground.js"></script>
+<body id="homePageBody">
+    
     <script src="controllers/index.js"></script>
+    <script src="reusable/menu.js"></script>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">Introduction to UI5</a>
+        <a href="#">Project Folder Breakdown</a>
+        <a href="#">Knowledge Test</a>
+    </div>
+    
+    <div class="parentDiv" id="parentDiv">
+        <div class="menuFormatting">
+            <img src="images/menu-button.svg" id="menu-button" alt="Menu Button" onclick="openMenu()"/>
+        </div> 
+
+        <div class="homePageTitleContainer" >
+            <h1 class="homePageTitleFont" id="title">Welcome <br> to the <br> UI5 Academy</h1>
+            <p class="homePageFont">Learning hub for all things SAP UI5. <br> Please choose from the menu to <br> start your journey.</p>
+        </div>
+    </div>
+        
+    
 </body>
 </html>
