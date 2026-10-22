@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI5 Academy</title>
+</head>
+
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+
+<body id="homePageBody">
+    
+    <script src="../controllers/index.js"></script>
+    <script src="../reusable/menu.js"></script>
+
+    <div id="mySidebar" class="sidebar generalFont">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#" class="">Home</a>
+        <details>
+            <summary>
+                <a class="icon" width="10%">⮟</a>
+                <a href="introductionToUI5.html">Introduction to UI5</a>
+            </summary>
+            
+                <a href="introductionToUI5.html">1. Introduction to UI5</a>
+                <a href="#deliver">2. Basic Breakdown</a>
+                <a href="#package">2.1 Models</a>
+                <a href="#express">2.2 Views</a>
+                <a href="#express">2.3 Controllers</a>
+                <a href="#express">2.4 Controls</a>
+                <a href="#express">2.5 Libraries</a>
+                <a href="#deliver">3. UI5 Evolution</a>
+                <a href="#package">3.1 Modular Core</a>
+                <a href="#express">3.2 Rendering and Controls</a>
+                <a href="#express">3.3 Programming Models</a>
+                <a href="#express">3.4 Build Tooling</a>
+                <a href="#deliver">4. UI5 Controls Introduction</a>
+                <a href="#package">4.1 Property</a>
+                <a href="#express">4.2 Aggregation</a>
+                <a href="#express">4.3 Association</a>
+                <a href="#express">4.4 Event</a>
+                <a href="#express">4.5 Self-Closing</a>
+                <a href="#deliver">5. Hungarian Notation</a>
+                <a href="#deliver">6. Other Key SAPUI5 Terms</a>
+                <a href="#deliver">7. SDK</a>
+        </details>
+
+        <details>
+            <summary>
+                <a class="icon" width="10%">⮟</a>
+                <a href="#">Project Folder Breakdown</a>
+            </summary>
+                <a href="./views/projectBreakdown.html">1. Introduction</a>
+                <a href="#deliver">2. Breakdown</a>
+                <a href="#package">2.1 Controllers</a>
+                <a href="#express">2.2 Views</a>
+                <a href="#express">2.3 Fragments</a>
+                <a href="#express">2.4 CSS</a>
+                <a href="#express">2.5 i18n</a>
+                <a href="#deliver">2.6 Formatter</a>
+                <a href="#package">2.7 index.html</a>
+                <a href="#express">2.8 manifest.jsno</a>
+                <a href="#express">2.9 component.js</a>
+                <a href="#express">2.10 models.js</a>
+                <a href="#deliver">2.11 Theme</a>
+        </details>
+
+        <a href="#">Knowledge Test</a>
+        <p></p>
+    </div>
+    
+    <div class="parentDiv" id="parentDiv">
+        <div class="menuFormatting">
+            <img src="../images/menu-button.svg" id="menu-button" alt="Menu Button" onclick="openMenu()"/>
+        </div> 
+
+        <div class="titleContainer" >
+            <h1 class="titleFont" id="title">Introduction to UI5</h1>
+        </div>
+    </div>
+
+    <div class="informationDiv">
+        <h2>Introduction to UI5</h2>
+        <p>SAPUI5 is a user interface development toolkit. First developed by SAP in 2010 under the code name Phoenix, the framework allows developers to create web applications for HTML5. SAPUI5 allows users to consume data from any service. 
+            It uses the model-view-controller (MVC) development concept, which consists of a three-part application: models, which contain data; views, which represent the data and the UI; and controllers, which handle the data and user interaction.</p>
+    </div>
+
+    <div class="informationDiv">
+        <h2>Basic Breakdown</h2>
+        <h3>Models</h3>
+        <p>Models are containers for data and hold all the business data an application will work with. There are a handful of pre-defined model classes available in SAPUI5, including JSON and resource models.</p>
+        <h3>Views</h3>
+        <p>Views are the front-end display of data by an application. Because this is the portion of the app that end-users work with, it’s important to incorporate design thinking and UI best practices when developing views.</p>
+        <h3>Controllers</h3>
+        <p>Controllers implements the logic that bridges Models and Views.</p>
+        <h3>Controls</h3>
+        <p>Controls are the decision-makers in a line of code. Sometimes called widgets, components, or elements, they tell the app what to do whenever a choice has to be made. Currently, more than 200 controls exist with more in development.</p>
+        <h3>Libraries</h3>
+        <p>Controls are accessible to developers via numerous libraries. Here’s a brief overview of key libraries and what they allow: </p>
+        <ul>
+            <li>ui.core: core functionality; essential to all SAPUI5 apps</li>
+            <li>m: main library; includes most basic and important controls for mobile and desktop devices</li>
+            <li>ui.layout: structure controls for element display</li>
+            <li>ui.unified: mobile and desktop controls</li>
+            <li>ui.table: data controls for large-volume data</li>
+            <li>viz: different types of charts</li>
+            <li>ui.comp: smart content such as SmartField, SmartTable, etc.</li>
+            <li>suite: a set of three libraries that contain types and templates</li>
+            <li>ushell: shell, service-related functionality</li>
+            <li>uxap: controls such as breadcrumbs</li>
+            <li>ui.suite: controls for new SAP Business Suite (SAP ERP) apps</li>
+            <li>ui.vk: functionality and controls for 3D modeling</li>
+        </ul> 
+        <img src="../images/library-img.png" id="library-image" alt="Library Image" />
+    </div>
+        
+    
+</body>
+</html>
