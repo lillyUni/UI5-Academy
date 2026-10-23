@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI5 Academy</title>
+</head>
+
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+
+<body id="trainingResourcesBody">
+    
+    <script src="../controllers/index.js"></script>
+    <script src="../reusable/menu.js"></script>
+
+    <div id="mySidebar" class="sidebar generalFont">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#" class="">Home</a>
+        <details>
+            <summary>
+                <a class="icon" width="10%">⮟</a>
+                <a href="introductionToUI5.html">Introduction to UI5</a>
+            </summary>
+            
+            <div>
+                <a class="subMenuItems" href="#introductionToUI5Section">1. Introduction to UI5</a>
+                <a class="subMenuItems" href="#basicBreakdownSection">2. Basic Breakdown</a>
+                <a class="subMenuItems" href="#modelBreakdownSection">2.1 Models</a>
+                <a class="subMenuItems" href="#viewsBreakdownSection">2.2 Views</a>
+                <a class="subMenuItems" href="#controllersBreakdownSection">2.3 Controllers</a>
+                <a class="subMenuItems" href="#controlsBreakdownSection">2.4 Controls</a>
+                <a class="subMenuItems" href="#librariesBreakdownSection">2.5 Libraries</a>
+                <a class="subMenuItems" href="#ui5EvolutionSection">3. UI5 Evolution</a>
+                <a class="subMenuItems" href="#modularCoreEvolutionSection">3.1 Modular Core</a>
+                <a class="subMenuItems" href="#renderingEvolutionSection">3.2 Rendering and Controls</a>
+                <a class="subMenuItems" href="#programmingEvolutionSection">3.3 Programming Models</a>
+                <a class="subMenuItems" href="#buildToolingEvolutionSection">3.4 Build Tooling</a>
+                <a class="subMenuItems" href="#controlsIntroSection">4. UI5 Controls Introduction</a>
+                <a class="subMenuItems" href="#propertyControlsIntroSection">4.1 Property</a>
+                <a class="subMenuItems" href="#aggregationControlsIntroSection">4.2 Aggregation</a>
+                <a class="subMenuItems" href="#associationControlsIntroSection">4.3 Association</a>
+                <a class="subMenuItems" href="#eventControlsIntroSection">4.4 Event</a>
+                <a class="subMenuItems" href="#selfClosingControlsIntroSection">4.5 Self-Closing</a>
+                <a class="subMenuItems" href="#hungarianNotationSection">5. Hungarian Notation</a>
+                <a class="subMenuItems" href="#otherTermsSection">6. Other Key SAPUI5 Terms</a>
+                <a class="subMenuItems" href="#sdkSection">7. SDK</a>
+        </details>
+
+        <details>
+            <summary>
+                <a class="icon" width="10%">⮟</a>
+                <a href="#">Project Folder Breakdown</a>
+            </summary>
+                <a href="./views/projectBreakdown.html">1. Introduction</a>
+                <a href="#deliver">2. Breakdown</a>
+                <a href="#package">2.1 Controllers</a>
+                <a href="#express">2.2 Views</a>
+                <a href="#express">2.3 Fragments</a>
+                <a href="#express">2.4 CSS</a>
+                <a href="#express">2.5 i18n</a>
+                <a href="#deliver">2.6 Formatter</a>
+                <a href="#package">2.7 index.html</a>
+                <a href="#express">2.8 manifest.jsno</a>
+                <a href="#express">2.9 component.js</a>
+                <a href="#express">2.10 models.js</a>
+                <a href="#deliver">2.11 Theme</a>
+        </details>
+
+        <a href="#">Knowledge Test</a>
+        <p></p>
+    </div>
+    
+    <div class="parentDiv" id="parentDiv">
+        <div class="menuFormatting">
+            <img src="../images/menu-button.svg" id="menu-button" alt="Menu Button" onclick="openMenu()"/>
+        </div> 
+
+        <div class="titleContainer" >
+            <h1 class="titleFont" id="title">Training Resources</h1>
+        </div>
+    </div>
+
+    <div class="informationDiv">
+        <h2 id="introductionToTRSection">Introduction</h2>
+        <p>Here is a combined list of all training resources found throughout the UI5 Confluence space, plus some extra. This page will be updated when new resources are found to keep this page up to date.</p>
+    </div>
+
+    <div id="sapSection" class="informationDiv">
+        <h2>SAP</h2>
+        <p>SAP Learning Hub - UX399 (3 Days) - Web Development Basics (JavaScript, HTML5 and CSS3).</p>
+        <br/>
+        <p>This is the official SAP walkthrough for UI5. Please make sure you are on the current UI5 version (you should be able to change this by clicking the version number at the top. We are currently on version 1.71.54, please use the closest one.</p>
+        <a href="https://sapui5.hana.ondemand.com/#/topic/3da5f4be63264db99f2e5b04c5e853db">https://sapui5.hana.ondemand.com/#/topic/3da5f4be63264db99f2e5b04c5e853db</a>
+        <br/>
+        <p>This is the samples repo provided by SAP, here you can see examples of standard UI5 controls and the code that is used to implement them.</p>
+        <a href="https://sapui5.hana.ondemand.com/#/controls">https://sapui5.hana.ondemand.com/#/controls</a>
+        <a href="https://sapui5.hana.ondemand.com/#/api">https://sapui5.hana.ondemand.com/#/api</a>
+        <br/>
+        <p>This learning journey will provide you with an overview of the technologies used with SAP Fiori, setting up a local and cloud development environment and more. Important note: It is only required to complete units 1 to 3 (inclusive) before moving onto building apps. 
+            The other modules should be revisited once you have a firmer grasp of the practical side of building Fiori applications.</p>
+        <a href="https://learning.sap.com/learning-journeys/learn-the-basics-of-sap-fiori">SAP Fiori basics </a>
+        <p>This learning journey will teach you how to build a Fiori Elements application using SAP Fiori tools, how to use annotations, and how to run the application locally with both mock and real data.</p>
+        <a href="https://developers.sap.com/tutorials/group-create-a-list-report-object-page-app-with-sap-fiori-tools">Build a Fiori Elements application</a>
+        <p>This learning journey will teach you how to setup your own Workzone portal, build a SAPUI5 application and deploy it to Workzone.</p>
+        <a href="https://developers.sap.com/tutorials/group-create-a-web-front-end-with-sapui5">Build a SAPUI5 front-end</a>
+    </div>  
+    
+    <div id="blogSection" class="informationDiv">
+        <h2>Blogs</h2>
+        <p>Below are 2 blogs from colleagues from Capgemini UK, they have posts about lots of different topics, some of which are UI5 and are very helpful.</p>
+        <a href="https://www.nathanhand.co.uk/blog">https://www.nathanhand.co.uk/blog</a>
+        <a href="https://blog.leonhassan.co.uk/">https://blog.leonhassan.co.uk/</a>
+    </div>  
+
+     <div id="otherSection" class="informationDiv">
+        <h2>Other</h2>
+        <p>This is a pure JavaScript course made up of 30 mini tutorials that will help you get to know js and its syntax. Its given by the talented Wes Bos who provides a bunch more courses at a cost.</p>
+        <a href="https://javascript30.com/">https://javascript30.com/</a>
+        <br/>
+        <p>UI5 uses the MVC (model, view, controller) design pattern for building apps. The Views are written in XML, Controllers are JavaScript and the Models are oData (json). General info below.</p>
+        <a href="https://www.w3schools.com/xml/xml_whatis.asp">https://www.w3schools.com/xml/xml_whatis.asp</a>
+        <a href="https://www.w3schools.com/js/js_json_intro.asp">https://www.w3schools.com/js/js_json_intro.asp</a>
+        <a href="https://www.w3schools.com/js/">https://www.w3schools.com/js/</a>
+        <br/>
+        <p>For some basic JavaScript knowledge it is recommended you take a look at the following link.</p>
+        <a href="https://app.pluralsight.com/id/?redirectTo=/library/courses/javascript-getting-started/table-of-contents">Beginner's course on Pluralsight.</a>
+        <br/>
+        <p>For a full breakdown, building a back-end and quizzes. Can use a 7 day free trial.</p>
+        <a href="https://www.codecademy.com/learn/paths/create-a-back-end-app-with-javascript">https://www.codecademy.com/learn/paths/create-a-back-end-app-with-javascript</a>
+    </div> 
+    
+</body>
+</html>

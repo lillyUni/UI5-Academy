@@ -48,7 +48,7 @@ html,
   height: 100%;  
 }
 
-[id$='homePageBody'] {
+body {
     background-color: black;
 }
 

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI5 Academy</title>
+</head>
+
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+
+<body id="projectBreakdownBody">
+    
+    <script src="../controllers/index.js"></script>
+    <script src="../reusable/menu.js"></script>
+
+    <div id="mySidebar" class="sidebar generalFont">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#" class="">Home</a>
+        <details>
+            <summary>
+                <a class="icon" width="10%">⮟</a>
+                <a href="introductionToUI5.html">Introduction to UI5</a>
+            </summary>
+            
+            <div>
+                <a class="subMenuItems" href="#introductionToUI5Section">1. Introduction to UI5</a>
+                <a class="subMenuItems" href="#basicBreakdownSection">2. Basic Breakdown</a>
+                <a class="subMenuItems" href="#modelBreakdownSection">2.1 Models</a>
+                <a class="subMenuItems" href="#viewsBreakdownSection">2.2 Views</a>
+                <a class="subMenuItems" href="#controllersBreakdownSection">2.3 Controllers</a>
+                <a class="subMenuItems" href="#controlsBreakdownSection">2.4 Controls</a>
+                <a class="subMenuItems" href="#librariesBreakdownSection">2.5 Libraries</a>
+                <a class="subMenuItems" href="#ui5EvolutionSection">3. UI5 Evolution</a>
+                <a class="subMenuItems" href="#modularCoreEvolutionSection">3.1 Modular Core</a>
+                <a class="subMenuItems" href="#renderingEvolutionSection">3.2 Rendering and Controls</a>
+                <a class="subMenuItems" href="#programmingEvolutionSection">3.3 Programming Models</a>
+                <a class="subMenuItems" href="#buildToolingEvolutionSection">3.4 Build Tooling</a>
+                <a class="subMenuItems" href="#controlsIntroSection">4. UI5 Controls Introduction</a>
+                <a class="subMenuItems" href="#propertyControlsIntroSection">4.1 Property</a>
+                <a class="subMenuItems" href="#aggregationControlsIntroSection">4.2 Aggregation</a>
+                <a class="subMenuItems" href="#associationControlsIntroSection">4.3 Association</a>
+                <a class="subMenuItems" href="#eventControlsIntroSection">4.4 Event</a>
+                <a class="subMenuItems" href="#selfClosingControlsIntroSection">4.5 Self-Closing</a>
+                <a class="subMenuItems" href="#hungarianNotationSection">5. Hungarian Notation</a>
+                <a class="subMenuItems" href="#otherTermsSection">6. Other Key SAPUI5 Terms</a>
+                <a class="subMenuItems" href="#sdkSection">7. SDK</a>
+        </details>
+
+        <details>
+            <summary>
+                <a class="icon" width="10%">⮟</a>
+                <a href="#">Project Folder Breakdown</a>
+            </summary>
+                <a href="./views/projectBreakdown.html">1. Introduction</a>
+                <a href="#deliver">2. Breakdown</a>
+                <a href="#package">2.1 Controllers</a>
+                <a href="#express">2.2 Views</a>
+                <a href="#express">2.3 Fragments</a>
+                <a href="#express">2.4 CSS</a>
+                <a href="#express">2.5 i18n</a>
+                <a href="#deliver">2.6 Formatter</a>
+                <a href="#package">2.7 index.html</a>
+                <a href="#express">2.8 manifest.jsno</a>
+                <a href="#express">2.9 component.js</a>
+                <a href="#express">2.10 models.js</a>
+                <a href="#deliver">2.11 Theme</a>
+        </details>
+
+        <a href="#">Knowledge Test</a>
+        <p></p>
+    </div>
+    
+    <div class="parentDiv" id="parentDiv">
+        <div class="menuFormatting">
+            <img src="../images/menu-button.svg" id="menu-button" alt="Menu Button" onclick="openMenu()"/>
+        </div> 
+
+        <div class="titleContainer" >
+            <h1 class="titleFont" id="title">Project Folder Breakdown</h1>
+        </div>
+    </div>
+
+    <div class="informationDiv">
+        <h2 id="introductionToProjectSection">Introduction</h2>
+        <p>In this document, we will breakdown the folders and files used throughout UI5 applications. We'll look into how each are used and how they connect to each other.</p>
+    </div>
+
+    <div id="breakdownSection" class="informationDiv">
+        <h2>Breakdown</h2>
+        <h3 id="controllersBreakdownSection">Controllers</h3>
+        <p>The controller is responsible for responding to the user input and perform interactions on the view as well as the back end data. The controller can receive the input, then validate the input and then perform the business operation that modifies the state of the data model. Every view has its own controller 
+            although it is not mandatory for an view to have an controller. Usually a controller has the same name as the view except in the case of base controller. The controller in SAPUI5 is always in the JavaScript format, with the ".controller.js" extension. The controller primarily consists of functions that are 
+            called from the views whenever an event occurs. In SAPUI5, controllers can be defined in two ways: </p>
+            <ul>
+                <li><h4>Asynchronous Module Definition (AMD) Structure</h4></li>
+            </ul> 
+            <div class="generalImage">
+                <img src="../images/AMD-Structure.png" id="AMD-image" alt="AMD Structure Example" />
+            </div>
+            <ul>
+                <li><h4>Not using the AMD Structure</h4></li>
+            </ul> 
+            <div class="generalImage">
+                <img src="../images/Non-AMD-Structure-1.png" id="nonAMDStructureImg1" alt="Non-AMD Structure Example 1" />
+            </div>
+
+            <div class="generalImage">
+                <img src="../images/Non-AMD-Structure-2.png" id="nonAMDStructureImg1" alt="Non-AMD Structure Example 2" />
+            </div>
+        <p>The AMD structure is more preferred as we can add dependencies as well as extend other components such as base controller using the AMD structure.
+        <br/>The lifecycle of a Controller is mainly determined by the following methods (also known as the hook methods):</p>
+            <ul>
+                <li><h4>init:</h4>The controller is born! It is called when a view is instantiated and its controls Function is called by the framework during constructor execution. All the initialization stuff here.It is used to modify the view before it is displayed to bind event handlers </li>
+                <li><h4>onBeforeRendering:</h4>Called by the framework before the rendering of the control is started. Triggers before every (re)rendering.</li>
+                <li><h4>onAfterRendering:</h4>Called by the framework after the rendering of the control has completed. Triggers after every (re)rendering.</li>
+                <li><h4>exit:</h4>Called before destroying the view. Cleans up the instances before destruction. Called by the framework. It frees the resources and finalizes activities.</li>
+            </ul> 
+        
+        <h3 id="viewsBreakdownSection">Views</h3>
+        <p>Views in SAPUI5 is like a user interface. Views display data using the model to the user and also enables them to modify the data. In SAPUI5, the views basically is a container for UI5 screen elements (such as button, input fields, tables, lists, etc) and UI5 layouts (HBox, VBox, Flex box, etc). The views are used to define and render the UI.
+        <br/>In SAPUI5, there are 4 types of views:</p>
+            <ul>
+                <li>JS Views - in JavaScript format. The extension of the view file is ".view.js". By default, every JS view has the foll. two methods:
+                    <ul>
+                        <li><h4>getControllerName():</h4>Specifies the controller belonging to this view.If this method is not implemented or returns NULL, the view has no controller.</li>
+                        <li><h4>createContent():</h4>Called initially once after the controller has been instantiated.This method is used to create the UI. As the method knows the controller, it can directly attach the event handler</li>
+                    </ul> 
+                    <p>Advantages</p>
+                    <ul>
+                        <li>Data binding is customizable.</li>
+                        <li>Templating can be done.</li>
+                        <li>No parsing overhead, hence relatively faster execution.</li>
+                    </ul>
+                    <p>Disadvantages</p>
+                    <ul>
+                        <li>Functions (Behaviour code) can be written within the view itself (Not following MVC).</li>
+                        <li>Cannot embed HTML elements.</li>
+                    </ul>
+                </li>
+                <br/>
+                <li>XML Views - in the XML format. The file name ends with the extension ".view.xml". There are no predefined methods in the XML view.
+                    <p>Advantages</p>
+                    <ul>
+                        <li>Validation of elements</li>
+                        <li>Supports embedding of HTML elements.</li>
+                    </ul>
+                    <div class="generalImage">
+                        <img src="../images/XML-View.png" id="xmlViewImg" alt="XML View Example" />
+                    </div>
+                </li>
+                <br/>
+                <li>HTML Views -  in HTML format. The file name ends with the extension ".view.html". Here we create the controls within the &lt;div&gt; tags, as we do while developing HTML pages.
+                    <div class="generalImage">
+                        <img src="../images/HMTL-View.png" id="htmlViewImg" alt="HTML View Example" />
+                    </div>
+                </li>
+                <br/>
+                <li>JSON Views - in JSON format.  The file name ends with the extension ".view.json".
+                    <div class="generalImage">
+                        <img src="../images/JSON-View.png" id="jsonViewImg" alt="JSON View Example" />
+                    </div>
+                </li>
+                <br/>
+            </ul> 
+        <p> XML view is mostly used. In all FIORI apps, we use the XML views. Apart from these views, the user can define an custom view, by entending the sap.ui.core.mvc.View library.</p>
+
+        <h3 id="fragmentsBreakdownSection">Fragments</h3>
+        <p>Fragments are light-weight UI parts which can be reused, defined similar to views, but do not have any controller or other behavior code involved. They can connect to existing controllers of the 
+            "owning" view. This means that one important characteristic of fragments is that they are independent of the MVC concept and can be used without using MVC. However, if fragments are used together 
+            with views and controllers, fragments can make use of them and integrate them neatly.
+        <br/>XML fragments are similar to XML view, but have no <View> tag as root element. Instead, there is a SAPUI5 control.
+        <br/>You define a simple XML fragment as shown in the following code snippet:</p>
+        <div class="generalImage">
+            <img src="../images/fragment-example.png" id="fragmentExampleImg" alt="Example of a fragment" width="80%" />
+        </div>
+        <p>The event handler is bound to the doSomething method of a controller. This is expressed by the doSomething value of the press event attribute. This means that this fragment can only be instantiated 
+            with a controller if the controller has this method. If not, the code throws an error.</p>
+
+        <h3 id="cssBreakdownSection">CSS</h3>
+        <p>CSS stands for cascading style sheets and it can help In dramatically changing the look and feel of our application. SAPUI5 provides the flexibility of adding custom style classes to SAPUI5 controls. 
+            SAPUI5 controls are styled with CSS, and as applications can provide their own CSS, they can adapt the styling. However, the deeper such adaptations are, the more likely is it that they break with 
+            future SAPUI5 updates or with other libraries and apps getting involved. If you follow the rules listed below, you will reduce the risk of this happening.</p>
+        
+        <h3 id="i18nBreakdownSection">i18n</h3>
+        <p>Many companies use SAP systems and applications and many different countries. To ensure easy translation, the “i18n” (Internationalization) process is used. The app is not always recreated, but only 
+            the texts are translated and replaced. The individual translations are stored in the i18n folder with the prefix i18n_ and the corresponding language tag. In addition, a default file is defined which 
+            is automatically called if no language is specified. This way, they are all in a central place and can be easily translated into other languages. This process of internationalization – in short i18n – 
+            is achieved in SAPUI5 by using a special resource model and the standard data binding syntax, but without a preceding " / " character.</p>
+
+        <h3 id="formatterBreakdownSection">Formatter</h3>
+        <p>Data that is presented on the UI often has to be converted so that it's human readable and fits to the locale of the user. On the other hand, data entered by the user has to be parsed and validated to 
+            be understood by the data source. For this purpose, you use formatters and data types. Formatters are used to define the formatting of data on the UI while data types work in both directions: they format 
+            the data on the UI and parse and validate user input that is entered. You can either use standard formatters and data types or define your own custom objects. Example:</p>
+        <div class="generalImage">
+            <img src="../images/Formatter1.png" id="formatterExampleImg" alt="Example of a formatter function" width="80%" />
+        </div>
+        <p>Which can then be used in the view like this:</p>
+        <div class="generalImage">
+            <img src="../images/Formatter2.png" id="formatterExampleImg2" alt="Example of a formatter being used in an XML view" width="80%" />
+        </div>
+        <p>And presents on screen like this:</p>
+        <div class="generalImage">
+            <img src="../images/Formatter3.png" id="formatterExampleImg3" alt="Example output using a formatter" width="40%" />
+        </div>
+
+        <h3 id="indexBreakdownSection">index.html</h3>
+        <p>Index. html is an HTML file that serves as the home page for a website. It's often the first file that visitors to a website will see. A minimalistic index. html file is needed to test the project configuration.  
+            The heart of an application is defined in its Component part, which means that we should aim for very minimal content in the index.html file itself. We have a header and the standard variant SAPUI5 bootstrap, the 
+            application startup, and a particular focus on resources and namespaces.</p>
+        
+        <h3 id="manifestBreakdownSection">manifest.json</h3>
+        <p>The Descriptor (manifest. json) file defines static information about the application, such as the name of the application or the location of various files. It is written in JavaScript Object Notation (JSON) format. 
+            If your application still uses the application configuration file, you can skip this section. The manifest. json file specifies how to launch your application. Optionally, you can include the runtime version and 
+            other parameters.</p>
+        
+        <h3 id="componentBreakdownSection">component.js</h3>
+        <p>The component.js file is the component controller and provides the runtime metadata and the component methods. A component can depend on the entire SAPUI5 library. If you only require particular controls, you can also 
+            start with the corresponding require statements directly.</p>
+        
+        <h3 id="modelsjsBreakdownSection">models.js</h3>
+        <p>A central place to declare global models that are then accessible throughout the entire code.</p>
+
+        <h3 id="themeBreakdownSection">Theme</h3>
+        <p>SAPUI5 supports you when creating and using different visual designs - called themes - that can be used alternatively and switched on the fly. This way, the same application can look very different, depending on the 
+            user's design preference or accessibility requirements. Existing themes can serve as a basis for new themes and, in case of new design trends, it is possible to create a matching theme for all existing applications 
+            without modifying the applications. The theme handling is decoupled from application development and done in a separate layer. The SAPUI5 library loads the required CSS files and offers ways of switching themes.</p>
+    </div>
+        
+    
+</body>
+</html>
