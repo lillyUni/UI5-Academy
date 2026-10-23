@@ -81,22 +81,22 @@
     </div>
 
     <div class="informationDiv">
-        <h2>Introduction to UI5</h2>
+        <h2 id="introductionToUI5Section">Introduction to UI5</h2>
         <p>SAPUI5 is a user interface development toolkit. First developed by SAP in 2010 under the code name Phoenix, the framework allows developers to create web applications for HTML5. SAPUI5 allows users to consume data from any service. 
             It uses the model-view-controller (MVC) development concept, which consists of a three-part application: models, which contain data; views, which represent the data and the UI; and controllers, which handle the data and user interaction.</p>
     </div>
 
-    <div class="informationDiv">
+    <div id="basicBreakdownSection" class="informationDiv">
         <h2>Basic Breakdown</h2>
-        <h3>Models</h3>
+        <h3 id="modelBreakdownSection">Models</h3>
         <p>Models are containers for data and hold all the business data an application will work with. There are a handful of pre-defined model classes available in SAPUI5, including JSON and resource models.</p>
-        <h3>Views</h3>
+        <h3 id="viewsBreakdownSection">Views</h3>
         <p>Views are the front-end display of data by an application. Because this is the portion of the app that end-users work with, it’s important to incorporate design thinking and UI best practices when developing views.</p>
-        <h3>Controllers</h3>
+        <h3 id="controllersBreakdownSection">Controllers</h3>
         <p>Controllers implements the logic that bridges Models and Views.</p>
-        <h3>Controls</h3>
+        <h3 id="controlsBreakdownSection">Controls</h3>
         <p>Controls are the decision-makers in a line of code. Sometimes called widgets, components, or elements, they tell the app what to do whenever a choice has to be made. Currently, more than 200 controls exist with more in development.</p>
-        <h3>Libraries</h3>
+        <h3 id="librariesBreakdownSection">Libraries</h3>
         <p>Controls are accessible to developers via numerous libraries. Here’s a brief overview of key libraries and what they allow: </p>
         <ul>
             <li>ui.core: core functionality; essential to all SAPUI5 apps</li>
@@ -112,8 +112,103 @@
             <li>ui.suite: controls for new SAP Business Suite (SAP ERP) apps</li>
             <li>ui.vk: functionality and controls for 3D modeling</li>
         </ul> 
-        <img src="../images/library-img.png" id="library-image" alt="Library Image" />
+        <div class="generalImage">
+            <img src="../images/library-img.png" id="library-image" alt="Library Image" />
+        </div>
     </div>
+
+    <div class="informationDiv">
+        <h2 id="ui5EvolutionSection">UI5 Evolution</h2>
+        <p>SAPUI5 is constantly being retooled and updated by a worldwide team of developers working as part of the UI5 Evolution project. Under the team’s guidance, the current framework of SAPUI5 has evolved to orbit around four key areas: 
+            a modular core, rendering and controls, programming models, and build tooling.</p>
+        <h3 id="modularCoreEvolutionSection">Modelular Core</h3>
+        <p>The modular core of SAPUI5 reduces code down to a compact foundation. This not only streamlines and allows for more-organized code, but the code reduction makes apps more lightweight and therefore quicker for the user.</p>
+        <h3 id="renderingEvolutionSection">Rendering and Controls</h3>
+        <p>By making rendering and controls as small as possible while maintaining UI functionality, developers can reduce application complexity and make the framework faster.</p>
+        <h3 id="programmingEvolutionSection">Programming Models</h3>
+        <p>As SAPUI5’s programming model has been updated, it can be used alongside other frameworks such as Angular or React.</p>
+        <h3 id="buildToolingEvolutionSection">Build Tooling</h3>
+        <p>The latest advancement of build tooling for SAPUI5 is compatible with Node.js, allowing developers to use SAPUI5 alongside the platform. Available build tooling packages include ui5-logger, ui5-fs, ui5-builder, ui5-project, ui5-server, and ui5-cli.</p>
+    </div>
+
+    <div class="informationDiv">
+        <h2 id="controlsIntroSection">UI5 Controls Intro</h2>
+        <p>We’ve learnt in the introductory slide pack to this course that UI5 Fiori applications use a MVC architecture, Mode-View-Controller. For the View, we tend to code in XML which stands for Extensible Markup Language. SAP’s UI5 Java Script framework introduces 
+            specialised XML tags that render Fiori objects on the screen. For our first example, let’s look at the Input control, which is an input box that receives strings values. Common use cases include entering your name or giving data. <br/>
+            
+            <pre>&lt;Input/&gt;</pre>
+            
+            This is as barebones as you can get. It doesn’t hold any properties, aggregations, associations, or events. And it self-closes as well. Let’s go over everything mentioned:</p>
+        <h3 id="propertyControlsIntroSection">Property</h3>
+        <p>These values control aspects of the control and change the behaviour of the call. For example, if we put a string value in the ‘placeholder’ property on the Input control, we can display a faded text in the input box as a description to help the user with what to enter into that Input control. We would write it like:<br/>
+        
+            <pre>Input placeholder= "Enter name here..." /&gt;</pre>
+        
+        </p>
+        <h3 id="aggregationControlsIntroSection">Aggregation</h3>
+        <p>These are child tags. Most controls have possible aggregations that can be used, a few are common like ‘content’ or ‘customData’. In this example, the aggregation is called suggestionItems, and it expects a list of suggestion item controls.<br/>
+            <pre>&lt;Input&gt;</pre>
+            <pre>   &lt;suggestionItems&gt;</pre>
+            <pre>       &lt;Item text="Suggestion 1"/&gt;</pre>
+            <pre>       &lt;Item text="Suggestion 2"/&gt;</pre>
+            <pre>   &lt;suggestionItems/&gt;</pre>
+            <pre>&lt;Input/&gt;</pre>
+        </p>
+        <h3 id="associationControlsIntroSection">Association</h3>
+        <p>These values are often used to link ‘Label’ controls and other controls to aid accessibility programs in reading the page.
+            <pre>Label id="idLabelCotrol" text="Label for the input"/&gt;</pre>
+            <pre>Input ariaLabelledBy="idLabelCotrol" /&gt;</pre>
+        </p>
+        <h3 id="eventControlsIntroSection">Event</h3>
+        <p>These are your bread and butter in giving your application functionality, we will be looking at these in depth during this course. These values act as hooks for your XML to trigger coded functions in a linked controller, written in JavaScript. In this example, we will be using the ‘submit’ event, which will look like this:
+            <pre>&lt;Input submit="onSubmit"/&gt;</pre>
+        </p>
+        <h3 id="selfClosingControlsIntroSection">Self-Closing</h3>
+        <p>This is standard XML notation. If a tag has no children or anything between an open and closing tags, then the open tag can self-close as above. <br/>Example:</p>
+            <pre>&lt;Input&gt;&lt;Input/&gt;</pre>
+            becomes
+            <pre>&lt;Input/&gt;</pre>
+        </p>
+    </div>
+
+    <div class="informationDiv">
+        <h2 id="hungarianNotationSection">Hungarian Notation</h2>
+        <p>Hungarian notation in programming is a naming convention used to denote the data type of a variable while defining it. In the Hungarian method, each variable name starts with or ends with some characters that indicate its data type.  It is used to improve code readability and maintainability. By using a consistent naming convention, 
+            it becomes easier for developers to understand the purpose and usage of variables, functions, and other program elements. <br/> Examples:</p>
+        <ul>
+            <li>a → array</li>
+            <li>b → boolean</li>
+            <li>i → integer</li>
+            <li>s → string</li>
+            <li>p → promise</li>
+            <li>o → object</li>
+        </ul> 
+    </div>
+
+    <div class="informationDiv">
+        <h2 id="otherTermsSection">Other Key SAPUI5 Terms</h2>
+        <p>While we’ve laid out many of the important terminology you’ll run into when working with SAPUI5, there are a handful more that will be helpful to you.</p>
+        <ul>
+            <li><h4>Operations:</h4> Create, Read, Update, and Delete operations.</li>
+            <li><h4>Event handlers:</h4> Functions that are assigned to controls and execute commands when the controls are invoked.</li>
+            <li><h4>JavaScript Object Notation (JSON):</h4> A data format written in text that allows for easy access and analysis by humans and machines.</li>
+            <li><h4>Open Data (OData):</h4> An open HTTP-based protocol for consuming, querying, and exposing data on the web that provides common access to data without learning new APIs.</li>
+            <li><h4>Representational State Transfer (REST) Programming:</h4> A programming paradigm typically applied to web services.</li>
+            <li><h4>SAP Web IDE:</h4> A cloud-based development environment for SAPUI5 applications.</li>
+            <li><h4>UI5 Inspector:</h4> A Google Chrome plugin that provides debugging assistance.</li>
+            <li><h4>Camel Case:</h4> A way to separate the words in a phrase by making the first letter of each word capitalized and not using spaces, e.g. camelCase</li>
+            <li><h4>Promise:</h4> An object that will produce a single value some time in the future. If the promise is successful, it will produce a resolved value, but if something goes wrong then it will produce a reason why the promise failed</li>
+        </ul> 
+    </div>
+
+    <div class="informationDiv">
+        <h2 id="sdkSection">SDK</h2>
+        <p>The reference for UI5 controls can be found at this link: <a href="https://ui5.sap.com/">https://ui5.sap.com/</a> <br/>
+            <br/>
+            This is the backbone to creating UI5 applications. It holds tutorials, sample applications and information on every UI5 control. For now, all you will need to know is that all controls are under the ‘API Reference’ tab. As it is all UI5 controls, be aware that some controls have the same name but belong to different libraries. 
+            For example, the sap.m.Table and the sap.ui.table.Table are both called Table but behave in different ways and have different associated properties.</p>
+    </div>
+
         
     
 </body>
