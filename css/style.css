@@ -156,3 +156,37 @@ summary::-webkit-details-marker {
   justify-content: center;
   align-items: center;
 }
+
+.multipleChoiceContainer{
+  display: grid;
+  grid-template-areas: 
+      "answer1 answer2"
+      "answer3 answer4";
+  grid-template-columns: 1fr 1fr;
+  background-color: transparent;
+}
+
+.button{
+  background-color: #487CEA;
+  width:20%;
+  height: 150%;
+  margin: 5px !important;
+}
+
+.buttonText{
+  font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-size: 24px;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings:
+  "wdth" 100;
+  color: white;
+}
+
+.buttonContainer{
+  display: flex; 
+  justify-content: flex-end;
+  margin-top: 40px !important;
+  margin-bottom: 20px !important;
+}
