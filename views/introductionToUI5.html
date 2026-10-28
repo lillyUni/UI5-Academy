@@ -133,7 +133,7 @@
         <h2 id="ui5EvolutionSection">UI5 Evolution</h2>
         <p>SAPUI5 is constantly being retooled and updated by a worldwide team of developers working as part of the UI5 Evolution project. Under the team’s guidance, the current framework of SAPUI5 has evolved to orbit around four key areas: 
             a modular core, rendering and controls, programming models, and build tooling.</p>
-        <h3 id="modularCoreEvolutionSection">Modelular Core</h3>
+        <h3 id="modularCoreEvolutionSection">Modular Core</h3>
         <p>The modular core of SAPUI5 reduces code down to a compact foundation. This not only streamlines and allows for more-organized code, but the code reduction makes apps more lightweight and therefore quicker for the user.</p>
         <h3 id="renderingEvolutionSection">Rendering and Controls</h3>
         <p>By making rendering and controls as small as possible while maintaining UI functionality, developers can reduce application complexity and make the framework faster.</p>
@@ -154,7 +154,7 @@
         <h3 id="propertyControlsIntroSection">Property</h3>
         <p>These values control aspects of the control and change the behaviour of the call. For example, if we put a string value in the ‘placeholder’ property on the Input control, we can display a faded text in the input box as a description to help the user with what to enter into that Input control. We would write it like:<br/>
         
-            <pre>Input placeholder= "Enter name here..." /&gt;</pre>
+            <pre>&lt;Input placeholder= "Enter name here..." /&gt;</pre>
         
         </p>
         <h3 id="aggregationControlsIntroSection">Aggregation</h3>
@@ -168,8 +168,8 @@
         </p>
         <h3 id="associationControlsIntroSection">Association</h3>
         <p>These values are often used to link ‘Label’ controls and other controls to aid accessibility programs in reading the page.
-            <pre>Label id="idLabelCotrol" text="Label for the input"/&gt;</pre>
-            <pre>Input ariaLabelledBy="idLabelCotrol" /&gt;</pre>
+            <pre>&lt;Label id="idLabelCotrol" text="Label for the input"/&gt;</pre>
+            <pre>&lt;Input ariaLabelledBy="idLabelCotrol" /&gt;</pre>
         </p>
         <h3 id="eventControlsIntroSection">Event</h3>
         <p>These are your bread and butter in giving your application functionality, we will be looking at these in depth during this course. These values act as hooks for your XML to trigger coded functions in a linked controller, written in JavaScript. In this example, we will be using the ‘submit’ event, which will look like this:
