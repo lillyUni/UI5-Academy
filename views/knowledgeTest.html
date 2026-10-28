@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI5 Academy</title>
+</head>
+
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+
+<body id="knowledgeTestBody">
+    
+    <script src="../controllers/index.js"></script>
+    <script src="../reusable/menu.js"></script>
+
+    <div id="mySidebar" class="sidebar generalFont">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../index.html" class="">Home</a>
+        <details>
+            <summary>
+                <a class="icon" width="10%">⮟</a>
+                <a href="introductionToUI5.html">Introduction to UI5</a>
+            </summary>
+            
+            <div>
+                <a class="subMenuItems" href="introductionToUI5.html#introductionToUI5Section">1. Introduction to UI5</a>
+                <a class="subMenuItems" href="introductionToUI5.html#basicBreakdownSection">2. Basic Breakdown</a>
+                <a class="subMenuItems" href="introductionToUI5.html#modelBreakdownSection">2.1 Models</a>
+                <a class="subMenuItems" href="introductionToUI5.html#viewsBreakdownSection">2.2 Views</a>
+                <a class="subMenuItems" href="introductionToUI5.html#controllersBreakdownSection">2.3 Controllers</a>
+                <a class="subMenuItems" href="introductionToUI5.html#controlsBreakdownSection">2.4 Controls</a>
+                <a class="subMenuItems" href="introductionToUI5.html#librariesBreakdownSection">2.5 Libraries</a>
+                <a class="subMenuItems" href="introductionToUI5.html#ui5EvolutionSection">3. UI5 Evolution</a>
+                <a class="subMenuItems" href="introductionToUI5.html#modularCoreEvolutionSection">3.1 Modular Core</a>
+                <a class="subMenuItems" href="introductionToUI5.html#renderingEvolutionSection">3.2 Rendering and Controls</a>
+                <a class="subMenuItems" href="introductionToUI5.html#programmingEvolutionSection">3.3 Programming Models</a>
+                <a class="subMenuItems" href="introductionToUI5.html#buildToolingEvolutionSection">3.4 Build Tooling</a>
+                <a class="subMenuItems" href="introductionToUI5.html#controlsIntroSection">4. UI5 Controls Introduction</a>
+                <a class="subMenuItems" href="introductionToUI5.html#propertyControlsIntroSection">4.1 Property</a>
+                <a class="subMenuItems" href="introductionToUI5.html#aggregationControlsIntroSection">4.2 Aggregation</a>
+                <a class="subMenuItems" href="introductionToUI5.html#associationControlsIntroSection">4.3 Association</a>
+                <a class="subMenuItems" href="introductionToUI5.html#eventControlsIntroSection">4.4 Event</a>
+                <a class="subMenuItems" href="introductionToUI5.html#selfClosingControlsIntroSection">4.5 Self-Closing</a>
+                <a class="subMenuItems" href="introductionToUI5.html#hungarianNotationSection">5. Hungarian Notation</a>
+                <a class="subMenuItems" href="introductionToUI5.html#otherTermsSection">6. Other Key SAPUI5 Terms</a>
+                <a class="subMenuItems" href="introductionToUI5.html#sdkSection">7. SDK</a>
+        </details>
+
+        <details>
+            <summary>
+                <a class="icon" width="10%">⮟</a>
+                <a href="projectBreakdown.html">Project Folder Breakdown</a>
+            </summary>
+                <a class="subMenuItems" href="projectBreakdown.html#introductionToProjectSection">1. Introduction</a>
+                <a class="subMenuItems" href="projectBreakdown.html#breakdownSection">2. Breakdown</a>
+                <a class="subMenuItems" href="projectBreakdown.html#controllersBreakdownSection">2.1 Controllers</a>
+                <a class="subMenuItems" href="projectBreakdown.html#viewsBreakdownSection">2.2 Views</a>
+                <a class="subMenuItems" href="projectBreakdown.html#fragmentsBreakdownSection">2.3 Fragments</a>
+                <a class="subMenuItems" href="projectBreakdown.html#cssBreakdownSection">2.4 CSS</a>
+                <a class="subMenuItems" href="projectBreakdown.html#i18nBreakdownSection">2.5 i18n</a>
+                <a class="subMenuItems" href="projectBreakdown.html#formatterBreakdownSection">2.6 Formatter</a>
+                <a class="subMenuItems" href="projectBreakdown.html#indexBreakdownSection">2.7 index.html</a>
+                <a class="subMenuItems" href="projectBreakdown.html#manifestBreakdownSection">2.8 manifest.jsno</a>
+                <a class="subMenuItems" href="projectBreakdown.html#componentBreakdownSection">2.9 component.js</a>
+                <a class="subMenuItems" href="projectBreakdown.html#modelsjsBreakdownSection">2.10 models.js</a>
+                <a class="subMenuItems" href="projectBreakdown.html#themeBreakdownSection">2.11 Theme</a>
+        </details>
+
+        <details>
+            <summary>
+                <a class="icon" width="10%">⮟</a>
+                <a href="trainingResources.html">Training Resources</a>
+            </summary>
+                <a class="subMenuItems" href="trainingResources.html#introductionToTRSection">1. Introduction</a>
+                <a class="subMenuItems" href="trainingResources.html#sapSection">2. SAP</a>
+                <a class="subMenuItems" href="trainingResources.html#blogSection">3. Blogs</a>
+                <a class="subMenuItems" href="trainingResources.html#otherSection">4. Other</a>
+        </details>
+
+        <a href="knowledgeTest.html">Knowledge Test</a>
+        <p></p>
+    </div>
+    
+    <div class="parentDiv" id="parentDiv">
+        <div class="menuFormatting">
+            <img src="../images/menu-button.svg" id="menu-button" alt="Menu Button" onclick="openMenu()"/>
+        </div> 
+
+        <div class="titleContainer" >
+            <h1 class="titleFont" id="title">Knowledge Test</h1>
+        </div>
+    </div>
+
+    <div id="testSection" class="informationDiv">
+        <h3 id="introTestSection">Try your knowledge out with this test. Press submit to get your score.</h3>
+        <p>1. What does MVC stand for?</p>
+            <div class="multipleChoiceContainer">
+                <p><input id="question1Choice1" type="checkbox"/>Model, View, Controller </p>
+                <p><input id="question1Choice2" type="checkbox"/>Modular, View and Control </p>
+                <p><input id="question1Choice3" type="checkbox"/>Manifest, View, Control </p>
+                <p><input id="question1Choice4" type="checkbox"/>Manifest, Vector, Configuration </p>
+            </div>
+        <p>2. Which language are you likely to see within a controller?</p>
+            <div class="multipleChoiceContainer">
+                <p><input id="question2Choice1" type="checkbox"/>XML</p>
+                <p><input id="question2Choice2" type="checkbox"/>HTML</p>
+                <p><input id="question2Choice3" type="checkbox"/>CSS</p>
+                <p><input id="question2Choice4"type="checkbox"/>JavaScript</p>
+            </div>
+        <p>3. Thinking about Hungarian Notation, what does the letter o mean? <br/><br/>
+            <input id="question3Input"/></p>
+
+        <p>4. How would you self close an Input control?<br/><br/>
+            <input id="question4Input"/></p>
+        <p>5. What is the backbone to creating SAP UI5 apps?<br/><br/>
+            <input id="question5Input"/></p>
+        <p>6. The controller is responsible for responding to the <input id="question6Input1"/> and perform <input id="question6Input2"/> on the view as well as the back end data.</p>
+        <p>7. What does CSS stand for?</p>
+            <div class="multipleChoiceContainer">
+                <p><input id="question7Choice1" type="checkbox"/>Colour and Style Sheet</p>
+                <p><input id="question7Choice2" type="checkbox"/>Cascading Style Sheet</p>
+                <p><input id="question7Choice3" type="checkbox"/>Cascading Style Streamline</p>
+                <p><input id="question7Choice4" type="checkbox"/>Colour and Style Streamline</p>
+            </div>
+        <p>8. What does CRUD stand for?</p>
+            <div class="multipleChoiceContainer">
+                <p><input id="question8Choice1" type="checkbox"/>Create, Read, Update, Delete</p>
+                <p><input id="question8Choice2" type="checkbox"/>Create, Remove, Update, Draw</p>
+                <p><input id="question8Choice3" type="checkbox"/>Control, Remove, Undo, Decide   </p>
+                <p><input id="question8Choice4" type="checkbox"/>Control, Read, Update, Decide</p>
+            </div>
+        <p>9. What is the manifest.json also known as?<br/><br/>
+            <input id="question9Input"/></p>
+        <p>10. What is the purpose of i18n files?</p>
+            <div class="multipleChoiceContainer">
+                <p><input id="question10Choice1" type="checkbox"/>Formatting</p>
+                <p><input id="question10Choice2" type="checkbox"/>Language Translation</p>
+                <p><input id="question10Choice3" type="checkbox"/>Mathematics</p>
+                <p><input id="question10Choice4" type="checkbox"/>Configuration</p>
+            </div>
+
+        <div class="buttonContainer">
+            <button type="button" class="button" id="refreshButton"><p class="buttonText">Refresh</p></button>
+            <button type="button" class="button" id="submitButton"><p class="buttonText">Submit</p></button>
+        </div>
+          
+    </div>
+
+    <div id="scorePopup" class="scorePopup">
+        <img src="../images/tick.svg" />
+        <h2 class="scoreTitleFont">Results</h2>
+        <p class="scoreFont" id="score" class=""></p>
+        <div class="buttonContainer">
+            <button type="button" class="scorePopupButton" id="closePopupButton"><p class="buttonText">Close</p></button>
+        </div>
+    </div>
+
+    
+    <script type="module" src="../controllers/knowledgeTest.js"></script>
+        
+    
+</body>
+</html>

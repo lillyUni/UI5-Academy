@@ -1,0 +1,26 @@
+{
+  "name": "ui5academy",
+  "version": "1.0.0",
+  "description": "UI5 Academy",
+  "homepage": "https://github.com/lillyUni/UI5-Academy#readme",
+  "bugs": {
+    "url": "https://github.com/lillyUni/UI5-Academy/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lillyUni/UI5-Academy.git"
+  },
+  "license": "MIT",
+  "author": "Lilly Holmes",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js"
+  },
+  "dependencies": {
+    "jest": "^30.5.2"
+  },
+  "devDependencies": {
+    "jest-environment-jsdom": "^30.5.2"
+  }
+}

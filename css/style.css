@@ -1,0 +1,249 @@
+.homePageTitleFont{
+    font-family: "DynaPuff", system-ui;
+    font-optical-sizing: auto;
+    font-size: 96px;
+    font-weight: 400;
+    color: #F5A700;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    text-shadow: -3px 0 white, 0 3px white, 3px 0 white, 0 -3px white;
+}
+
+.homePageFont{
+    font-family: "DynaPuff", system-ui;
+    font-optical-sizing: auto;
+    font-size: 40px;
+    font-weight: 400;
+    color: white;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+.generalFont{
+  font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-size: 40px;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+  "wdth" 100;
+}
+
+.titleFont{
+    font-family: "DynaPuff", system-ui;
+    font-optical-sizing: auto;
+    font-size: 96px;
+    font-weight: 400;
+    color: #F5A700;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    text-shadow: -3px 0 white, 0 3px white, 3px 0 white, 0 -3px white;
+}
+
+html,
+[id$='homePageBody'] {
+  height: 100%;  
+}
+
+body {
+    background-color: black;
+}
+
+.homePageTitleContainer{
+    max-width: 45rem;
+    text-align: center;
+    background-color: transparent;
+    margin: 1rem auto;
+}
+
+.titleContainer{
+    margin-top: -50px !important;
+    background-color: transparent;
+    margin: auto;
+}
+
+.menuFormatting{
+    padding-top: 25px;
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+.parentDiv{
+    display: flex;
+}
+
+.sidebar {
+  height: 93%;
+  width: 0; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden; 
+  padding-top: 60px; 
+  transition: 0.5s; 
+  outline: 4px solid #F5A700;
+  outline-offset: -15px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+details {
+  user-select: none;
+}
+
+details[open] summary a.icon {
+  transform:scaleY(-1);
+}
+
+.subMenuItems{
+  font-size: medium !important;
+  padding-left: 100px !important;
+  font-weight: 200;
+}
+
+summary {
+  display: flex;
+  cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+#parentDiv {
+  transition: margin-left .5s; 
+  padding: 20px;
+}
+
+.informationDiv {
+  background-color: white;
+  max-width: 72rem;
+  font-family: "DynaPuff", system-ui;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+  "wdth" 100;
+  margin: auto;
+  padding-top: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+}
+
+.generalImage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.multipleChoiceContainer{
+  display: grid;
+  grid-template-areas: 
+      "answer1 answer2"
+      "answer3 answer4";
+  grid-template-columns: 1fr 1fr;
+  background-color: transparent;
+}
+
+.button{
+  background-color: #487CEA;
+  width:20%;
+  height: 150%;
+  margin: 5px !important;
+}
+
+.buttonText{
+  font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-size: 24px;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings:
+  "wdth" 100;
+  color: white;
+}
+
+.buttonContainer{
+  display: flex; 
+  justify-content: flex-end;
+  margin-top: 40px !important;
+  margin-bottom: 20px !important;
+}
+
+.scorePopup{
+  width: 50%;
+  background-color: white;
+  outline: 40px solid black;
+  position: fixed;
+  top: o;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+
+.openScorePopup{
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.scorePopup img{
+  width: 20%;
+  padding-top: 20px;
+  margin-bottom: -40px !important;
+
+}
+
+.scoreTitleFont{
+    font-family: "DynaPuff", system-ui;
+    font-optical-sizing: auto;
+    font-size: 60px;
+    font-weight: 400;
+    color: #F5A700;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+    margin-bottom: -50px;
+}
+
+.scoreFont{
+  font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-size: 120px;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+  "wdth" 100;
+}
+
+.scorePopupButton{
+  background-color: #487CEA;
+  width:20%;
+  height: 150%;
+  margin: 20px !important;
+  margin-top: -50px !important;
+}
