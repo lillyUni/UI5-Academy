@@ -154,7 +154,7 @@
         <h3 id="propertyControlsIntroSection">Property</h3>
         <p>These values control aspects of the control and change the behaviour of the call. For example, if we put a string value in the ‘placeholder’ property on the Input control, we can display a faded text in the input box as a description to help the user with what to enter into that Input control. We would write it like:<br/>
         
-            <pre>Input placeholder= "Enter name here..." /&gt;</pre>
+            <pre>&lt;Input placeholder= "Enter name here..." /&gt;</pre>
         
         </p>
         <h3 id="aggregationControlsIntroSection">Aggregation</h3>
@@ -168,8 +168,8 @@
         </p>
         <h3 id="associationControlsIntroSection">Association</h3>
         <p>These values are often used to link ‘Label’ controls and other controls to aid accessibility programs in reading the page.
-            <pre>Label id="idLabelCotrol" text="Label for the input"/&gt;</pre>
-            <pre>Input ariaLabelledBy="idLabelCotrol" /&gt;</pre>
+            <pre>&lt;Label id="idLabelCotrol" text="Label for the input"/&gt;</pre>
+            <pre>&lt;Input ariaLabelledBy="idLabelCotrol" /&gt;</pre>
         </p>
         <h3 id="eventControlsIntroSection">Event</h3>
         <p>These are your bread and butter in giving your application functionality, we will be looking at these in depth during this course. These values act as hooks for your XML to trigger coded functions in a linked controller, written in JavaScript. In this example, we will be using the ‘submit’ event, which will look like this:
