@@ -141,8 +141,8 @@
             </div>
 
         <div class="buttonContainer">
-            <button type="button" class="button" onclick="onRefreshQuiz()"><p class="buttonText">Refresh</p></button>
-            <button type="button" class="button" onclick="onSubmit(event)" id="submitButton"><p class="buttonText">Submit</p></button>
+            <button type="button" class="button" id="refreshButton"><p class="buttonText">Refresh</p></button>
+            <button type="button" class="button" id="submitButton"><p class="buttonText">Submit</p></button>
         </div>
           
     </div>
@@ -152,12 +152,12 @@
         <h2 class="scoreTitleFont">Results</h2>
         <p class="scoreFont" id="score" class=""></p>
         <div class="buttonContainer">
-            <button type="button" class="scorePopupButton" onclick="closePopup()"><p class="buttonText">Close</p></button>
+            <button type="button" class="scorePopupButton" id="closePopupButton"><p class="buttonText">Close</p></button>
         </div>
     </div>
 
     
-    <script src="../controllers/knowledgeTest.js"></script>
+    <script type="module" src="../controllers/knowledgeTest.js"></script>
         
     
 </body>

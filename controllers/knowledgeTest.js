@@ -89,6 +89,22 @@ function closePopup(){
     document.getElementById("scorePopup").classList.remove("openScorePopup");
 };
 
+const refreshButton = document.getElementById("refreshButton");
+const submitButton = document.getElementById("submitButton");
+const closePopupButton = document.getElementById("closePopupButton");
+
+if (refreshButton) {
+    refreshButton.addEventListener("click", onRefreshQuiz);
+}
+
+if (submitButton) {
+    submitButton.addEventListener("click", onSubmit);
+}
+
+if (closePopupButton) {
+    closePopupButton.addEventListener("click", closePopup);
+}
+
 export {
     onRefreshQuiz,
     onSubmit,
