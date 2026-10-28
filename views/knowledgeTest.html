@@ -96,17 +96,17 @@
         <h3 id="introTestSection">Try your knowledge out with this test. Press submit to get your score.</h3>
         <p>1. What does MVC stand for?</p>
             <div class="multipleChoiceContainer">
-                <p><input id="question1choice1" type="checkbox"/>Model, View, Controller </p>
-                <p><input id="question1choice2" type="checkbox"/>Modular, View and Control </p>
-                <p><input id="question1choice3" type="checkbox"/>Manifest, View, Control </p>
-                <p><input id="question1choice4" type="checkbox"/>Manifest, Vector, Configuration </p>
+                <p><input id="question1Choice1" type="checkbox"/>Model, View, Controller </p>
+                <p><input id="question1Choice2" type="checkbox"/>Modular, View and Control </p>
+                <p><input id="question1Choice3" type="checkbox"/>Manifest, View, Control </p>
+                <p><input id="question1Choice4" type="checkbox"/>Manifest, Vector, Configuration </p>
             </div>
         <p>2. Which language are you likely to see within a controller?</p>
             <div class="multipleChoiceContainer">
-                <p><input id="question2choice1" type="checkbox"/>XML</p>
-                <p><input id="question2choice2" type="checkbox"/>HTML</p>
-                <p><input id="question2choice3" type="checkbox"/>CSS</p>
-                <p><input id="question2choice4"type="checkbox"/>JavaScript</p>
+                <p><input id="question2Choice1" type="checkbox"/>XML</p>
+                <p><input id="question2Choice2" type="checkbox"/>HTML</p>
+                <p><input id="question2Choice3" type="checkbox"/>CSS</p>
+                <p><input id="question2Choice4"type="checkbox"/>JavaScript</p>
             </div>
         <p>3. Thinking about Hungarian Notation, what does the letter o mean? <br/><br/>
             <input id="question3Input"/></p>
@@ -115,7 +115,7 @@
             <input id="question4Input"/></p>
         <p>5. What is the backbone to creating SAP UI5 apps?<br/><br/>
             <input id="question5Input"/></p>
-        <p>6. The controller is responsible for responding to the <input id="question6Input1"/> and perform <input- id="question6Input2"/> on the view as well as the back end data.</p>
+        <p>6. The controller is responsible for responding to the <input id="question6Input1"/> and perform <input id="question6Input2"/> on the view as well as the back end data.</p>
         <p>7. What does CSS stand for?</p>
             <div class="multipleChoiceContainer">
                 <p><input id="question7Choice1" type="checkbox"/>Colour and Style Sheet</p>
@@ -141,11 +141,23 @@
             </div>
 
         <div class="buttonContainer">
-            <button type="button" class="button"><p class="buttonText">Refresh</p></button>
-            <button type="button" class="button"><p class="buttonText">Submit</p></button>
+            <button type="button" class="button" onclick="onRefreshQuiz()"><p class="buttonText">Refresh</p></button>
+            <button type="button" class="button" onclick="onSubmit(event)" id="submitButton"><p class="buttonText">Submit</p></button>
         </div>
           
     </div>
+
+    <div id="scorePopup" class="scorePopup">
+        <img src="../images/tick.svg" />
+        <h2 class="scoreTitleFont">Results</h2>
+        <p class="scoreFont" id="score" class=""></p>
+        <div class="buttonContainer">
+            <button type="button" class="scorePopupButton" onclick="closePopup()"><p class="buttonText">Close</p></button>
+        </div>
+    </div>
+
+    
+    <script src="../controllers/knowledgeTest.js"></script>
         
     
 </body>

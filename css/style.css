@@ -190,3 +190,60 @@ summary::-webkit-details-marker {
   margin-top: 40px !important;
   margin-bottom: 20px !important;
 }
+
+.scorePopup{
+  width: 50%;
+  background-color: white;
+  outline: 40px solid black;
+  position: fixed;
+  top: o;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+
+.openScorePopup{
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.scorePopup img{
+  width: 20%;
+  padding-top: 20px;
+  margin-bottom: -40px !important;
+
+}
+
+.scoreTitleFont{
+    font-family: "DynaPuff", system-ui;
+    font-optical-sizing: auto;
+    font-size: 60px;
+    font-weight: 400;
+    color: #F5A700;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+    margin-bottom: -50px;
+}
+
+.scoreFont{
+  font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-size: 120px;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+  "wdth" 100;
+}
+
+.scorePopupButton{
+  background-color: #487CEA;
+  width:20%;
+  height: 150%;
+  margin: 20px !important;
+  margin-top: -50px !important;
+}
