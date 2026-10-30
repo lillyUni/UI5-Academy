@@ -2,7 +2,9 @@
 # UI5 Academy
 
 Link to Figma Prototype: https://www.figma.com/design/Z9Y4hLkBBwe6Fgt9GoJdgJ/Untitled?node-id=16-317&t=dzqVtsQOoHp23uiH-1 
+
 Link to Application: https://lillyuni.github.io/UI5-Academy/ 
+
 Link to GitHub Repository: https://github.com/lillyUni/UI5-Academy
 
 ## 1.	Background
@@ -60,6 +62,7 @@ Won't Have
 ### 2.1 UX Research and Mood Board 
 
 ![](images/Report/Picture1.png)
+
 *Figure 1: Mood board*
 
 To inform the visual direction of the application, initial UX research was undertaken through the creation of a mood board using Dribbble and Figma. 
@@ -72,6 +75,7 @@ Colour was explored in a similar manner, with both light and dark interfaces con
 2. ![](images/Report/Picture2.png) 
 3. ![](images/Report/Picture3.png)
 4. ![](images/Report/Picture4.png)	 
+
 *Figures 2 -4: User Personas from UX Research.*
 
 To ensure that the design responded to realistic user needs, three personas were developed to represent the principal audiences identified for the application. 
@@ -96,6 +100,7 @@ Following the initial UX research and development of the user personas, the find
 5. ![](images/Report/Picture5.png)
 6. ![](images/Report/Picture6.png)	 
 7. ![](images/Report/Picture7.png)	 
+
 *Figures 5 -7: Colour contrast check results*
 
 Colour selection was refined by evaluating combinations from the proposed palette against WCAG contrast criteria. One tested combination produced a contrast ratio of 3.92:1 when blue was displayed against white. This combination was therefore not selected for standard body text. Instead, its intended use was restricted to appropriate user-interface and visual elements, while higher-contrast combinations were selected for textual information. 
@@ -107,6 +112,7 @@ The initial interface was first explored through a low-fidelity paper concept. T
 11. ![](images/Report/Picture11.png)	 
 12. ![](images/Report/Picture12.png)	 
 13. ![](images/Report/Picture13.png)
+
 *Figures 8 -13: Initial paper design concept art*
 
 The concept was subsequently developed into a higher-fidelity prototype using Figma. The resulting prototype consisted of five principal screens connected through a menu, alongside a popup for presenting Knowledge Test results. The navigation was designed to provide access both to different areas of the application and, where appropriate, specific content within those areas.
@@ -118,6 +124,7 @@ The concept was subsequently developed into a higher-fidelity prototype using Fi
 18. ![](images/Report/Picture18.png)	 
 19. ![](images/Report/Picture19.png)	 
 20. ![](images/Report/Picture20.png)	 
+
 *Figures 14 -20: Prototype screenshots from Figma.* 
 
 The visual style was intentionally designed to distinguish the learning application from a conventional corporate information resource. The DynaPuff typeface was explored as a means of establishing a more informal and approachable identity for the Academy.
@@ -140,6 +147,7 @@ Additional tickets were created when new requirements, enhancements or defects w
 24. ![](images/Report/Picture24.png)	 
 25. ![](images/Report/Picture25.png)	 
 26. ![](images/Report/Picture26.png)	 
+
 *Figures 21 -26: Example screenshots of GitHub Projects throughout development.*
 
 ### 3.2 GitHub Issues, branches and pull requests 
@@ -156,6 +164,7 @@ Figures 28 and 29 present the repository network graph at the conclusion of the 
 27. ![](images/Report/Picture21.png)	 
 28. ![](images/Report/Picture22.png)	 
 29. ![](images/Report/Picture23.png)	 
+
 *Figures 27 -29: Screenshots demonstrating an issues, the network graph and the branches.*
 
 ### 3.3	CI/CD Pipeline
@@ -165,6 +174,7 @@ Later in the development lifecycle, automated testing was incorporated following
 
 30. ![](images/Report/Picture30.png)	 
 31. ![](images/Report/Picture31.png)	 
+
 *Figures 30 -31: Demonstration of the CI/CD Pipeline.*
 
 ## 4.	MVP Development, Testing & Technical documentation  
@@ -178,7 +188,8 @@ Functionality with the potential to be shared across multiple areas of the appli
 Overall, the resulting folder and file structure balances conventions drawn from SAP UI5 development with the comparatively lightweight requirements of the MVP. 
 
 ![](images/Report/Picture32.png)
-Figure 32: Folder/File Structure of the project.*
+
+*Figure 32: Folder/File Structure of the project.*
 
 ### 4.2 Key MVP Development and Technical Documentation
 Development of the MVP was approached incrementally, with functionality implemented on a page-by-page basis. This allowed the underlying HTML, CSS and JavaScript techniques to be established progressively before being applied to more interactive areas of the application.
@@ -225,6 +236,7 @@ To continue development of the application, the repository and its dependencies 
 
 33. ![](images/Report/Picture33.png)	 
 34. ![](images/Report/Picture34.png)	 
+
 *Figures 33 -34: Example code snippets*
 
 ### 4.3 Use of Test-Driven Development 
@@ -241,6 +253,7 @@ The testing process also highlighted practical challenges associated with establ
 35. ![](images/Report/Picture35.png)	 
 36. ![](images/Report/Picture36.png)	 
 37. ![](images/Report/Picture37.png)	 
+
 *Figures 35 -37: TDD Code snippets and results*
 
 ### 4.4 Usability Testing
@@ -255,6 +268,7 @@ This stage identified three defects. Two related to minor presentation issues. T
 Although the application had behaved correctly within the local development environment, this did not guarantee identical behaviour following deployment. Testing the deployed build therefore provided an additional level of validation that could not be achieved through local testing alone. 
 
 ![](images/Report/Picture38.png)
+
 *Figure 38: Example of bug tickets*
 
 ### 4.5 Accessibility Evaluation 
@@ -281,6 +295,7 @@ The current prototype should therefore not be described as fully accessible at t
 43.  ![](images/Report/Picture25.png)	 
 44.  ![](images/Report/Picture26.png)	 
 45.  ![](images/Report/Picture26.png)	 
+
 *Figures 39 -45: Accessibility testing results*
 
 ## 5.	User documentation 
